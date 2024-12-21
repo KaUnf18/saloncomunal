@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Título de Registro -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:text="Registro"
+            android:textSize="60sp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:text="Complete los datos para registrarse"
+            android:textSize="20sp" />
+
+        <!-- Campo de Nombre -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <!-- Campo de Correo Electrónico -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+
+        <!-- Selector de tipo de usuario -->
+        <RadioGroup
+            android:id="@+id/rg_user_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrador" />
+
+            <RadioButton
+                android:id="@+id/rb_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprador" />
+        </RadioGroup>
+
+        <!-- Botón de Registro -->
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/btn_color"
+            android:text="Registrarse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
